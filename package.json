@@ -1,0 +1,25 @@
+{
+  "name": "testu",
+  "version": "0.1.0",
+  "description": "Test runner and assertion library",
+  "main": "index.js",
+  "bin": {
+    "testes": "./bin/run.js"
+  },
+  "scripts": {
+    "test": "node lib/test.js",
+    "dev": "watch 'npm run test' lib"
+  },
+  "keywords": [
+    "assertion",
+    "library"
+  ],
+  "author": "Mark Robson <mark.o.robson@gmail.com> (http://digioli.co.uk)",
+  "license": "MIT",
+  "devDependencies": {
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "glob": "7.1.2"
+  }
+}
