@@ -2,7 +2,7 @@
 
 const glob = require('glob');
 const { resolve } = require('path');
-const { spawn } = require('child_process');
+
 const cwd = process.cwd();
 
 glob(process.argv[2], {}, (error, files) => {
