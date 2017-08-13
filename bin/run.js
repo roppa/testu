@@ -5,8 +5,7 @@ const { resolve } = require('path');
 const { spawn } = require('child_process');
 const cwd = process.cwd();
 
-glob('lib/**/*.spec.js', {}, (error, files) => {
-
+glob(process.argv[2], {}, (error, files) => {
   if (!Array.isArray(files)) {
     throw new Error('glob should return an array of files');
   }

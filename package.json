@@ -7,7 +7,7 @@
     "testu": "./bin/run.js"
   },
   "scripts": {
-    "test": "./bin/run.js",
+    "test": "./bin/run.js lib/**/*.spec.js",
     "dev": "watch 'npm run test' lib"
   },
   "keywords": [
