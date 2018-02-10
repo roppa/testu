@@ -1,13 +1,13 @@
 const harness = require('./lib/harness');
 
 Promise.all(harness.tests)
-  .then((result) => {
+  .then(() => {
     harness.reporter.emit('end', harness.pass, harness.fail, harness.skipped);
     if (harness.fail > 0) {
       throw new Error(harness);
     }
   })
-  .catch((error) => {
+  .catch(() => {
     harness.reporter.emit('end', harness.pass, harness.fail, harness.skipped);
     process.exit(1);
   });
