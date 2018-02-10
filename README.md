@@ -1,5 +1,7 @@
 # Testu
 
+![<CircleCI status](https://circleci.com/gh/roppa/testu/tree/master.svg?style=shield&circle-token=521075127823b75a66b205e0faceb138384c430d)
+
 Testing is essential to development. I've obviously used testing libraries such as Mocha, Chai, Ava, Tape, etc. But how would you go about writing one yourself? Especially how would you build a test framework using that same framework to test itself? I got to thinking, just what would a test runner or 'test harness' consist of? I thought the basics would be:
 
 - It should be able to look for test file/s and execute tests within
