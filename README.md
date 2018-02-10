@@ -32,6 +32,20 @@ Helper assertions:
  - 'isAbove', 'above', 'greaterThan', 'over': numeric value above
  - 'isBelow', 'below', 'lessThan': numeric value below
  - 'isAtLeast', 'atLeast', 'greaterThanOrEqual': numeric value less than or equal
+ - 'isFalse': falsy value
+ - 'isTrue': truthy value
+
+Included on the assert function is 'expect', so you can destructure and use the expect format:
+
+```javascript
+test('using expect' ({ expect }) => {
+  expect(true).to.be.ok();
+  expect(0).to.equal(0);
+});
+```
+
+ - 'equal': equality test
+ - 'ok': truthy test
 
 ## Reporter
 
